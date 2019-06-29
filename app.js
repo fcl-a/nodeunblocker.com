@@ -3,16 +3,16 @@
  * similar to CGIProxy or PHProxy
  *
  *
- * This project is hosted on github:  https://github.com/nfriedly/nodeunblocker.com
+ * This project is hosted on github:  https://github.com/nfriedly/node-unblocker
  *
  * By Nathan Friedly - http://nfriedly.com
- * Released under the terms of the Affero GPL v3
+ * Released under the terms of the GPL v3
  */
 
 var url = require('url');
 var querystring = require('querystring');
 var express = require('express');
-var unblocker = require('unblocker');
+var unblocker = require('./lib/unblocker.js');
 var Transform = require('stream').Transform;
 
 var app = express();
